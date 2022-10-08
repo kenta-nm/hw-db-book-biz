@@ -140,6 +140,7 @@ CREATE TABLE `Orders` (
 CREATE TABLE `BookAuthors` (
 	`BookID` 		INT NOT NULL,
 	`AuthorID` 		INT NOT NULL,
+	`Royalty`       varchar(3) NOT NULL,
 	FOREIGN KEY(`BookID`) 
     REFERENCES `Books`(`BookID`) ,
     FOREIGN KEY(`AuthorID`) 

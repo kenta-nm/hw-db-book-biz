@@ -72,3 +72,31 @@ INSERT INTO `Orders` VALUES(2,'20050710','Processing','20030331','OA','DHL' ,'2'
 INSERT INTO `Orders` VALUES(3,'20060810','Done','20030331','NY','DHL' ,'3');
 INSERT INTO `Orders` VALUES(4,'20100910','Done','20030331','Japan','DHL','4' );
 INSERT INTO `Orders` VALUES(5,'20100910','Done','20030331','Japan','DHL' ,'5');
+
+-- --------------------------------------
+--  POPULATE BookAuthors
+-- --------------------------------------
+INSERT INTO `BookAuthors` VALUES(1,2,'5%');
+INSERT INTO `BookAuthors` VALUES(2,2,'10%');
+INSERT INTO `BookAuthors` VALUES(3,3,'15%');
+INSERT INTO `BookAuthors` VALUES(4,4,'5%');
+INSERT INTO `BookAuthors` VALUES(5,5,'10%');
+
+
+-- --------------------------------------
+--  POPULATE BookOrders
+-- --------------------------------------
+INSERT INTO `BookOrders` VALUES(1,2);
+INSERT INTO `BookOrders` VALUES(2,2);
+INSERT INTO `BookOrders` VALUES(3,3);
+INSERT INTO `BookOrders` VALUES(4,4);
+INSERT INTO `BookOrders` VALUES(5,5);
+
+-- --------------------------------------
+--  POPULATE CustomerOrders
+-- --------------------------------------
+INSERT INTO `CustomerOrders` VALUES(1,2);
+INSERT INTO `CustomerOrders` VALUES(2,2);
+INSERT INTO `CustomerOrders` VALUES(3,3);
+INSERT INTO `CustomerOrders` VALUES(4,4);
+INSERT INTO `CustomerOrders` VALUES(5,5);
