@@ -1,0 +1,84 @@
+### Name: Kentaro Numa ###
+### Class: 1.125 Architecting & Engineering Software Systems ###
+### Assignment: PS2 - Database Design ###
+
+
+
+
+*/ 1. Create a list of the entities and properties of the book industry
+### Reference1 : Amazon.com <https://www.amazon.com/>
+### Reference2 : MIT Libraries <https://libraries.mit.edu/>
+
+
+Entity1  Books
+Entity2  Authors
+Entity3  Publishers
+Entity4  Editors
+Entity5  Customers
+Entity6  Orders
+Entity7  Genres
+Entity8  BookAuthors
+Entity9  BookEditors
+Entity10 BookOrders
+Entity11 CustomerOrders
+
+Property1  BookID
+Property2  BookTitle
+Property3  PublisherID
+Property4  Language
+Property5  PublicationDate
+Property6  EditionDate
+Property7  Page
+Property8  ISBN10
+Property9  ISBN13
+Property10 Dimensions
+Property11 Price
+Property12 GenreID
+Property13 AuthorID
+Property14 FirstName
+Property15 LastName
+Property16 Email
+Property17 Phone
+Property18 BirthDate
+Property19 PublisherID
+Property20 EditorID
+Property21 PaymentMethod
+Property22 LoginId
+Property23 LoginPass
+Property24 OrderID
+Property25 OrderDate
+Property26 ShippingStatus
+Property27 ShippedDate
+Property28 ShippingLocation
+Property29 DeliveryCompany
+Property30 OrderValue
+Property31 GenreID
+Property32 GenreName
+Property33 Royalty
+#The Properties of FirstName, LastName, Email, Phone, BirthDate incluse the attributes of Authors, Publishers, Editors, Customers' Data
+*/
+
+*/2. Create a list of the unique identifiers – primary keys
+PK1 BookID
+PK2 AuthorID
+PK3 PublisherID
+PK4 EditorID
+PK5 GenreID
+PK6 CustomerID
+PK7 OrderID
+
+/*3.Create a list of the table relationships – the cardinality between entities.
+
+Table 1(Books),Table 3(Publishers), N:1
+Table 1(Books),Table 8(BookAuthors), 1:N
+Table 2(Authors),Table 8(BookAuthors), 1:N
+Table 1(Books), Table 9(BookEditors), 1:N
+Table 4(Editors), Table 9(BookEditors), 1:N
+Table 1(Books), Table 10(BookOrders), 1:N 
+Table 6(Orders), Table 10(BookOrders), 1:N 
+Table 5(Customers), Table 11(CustomerOrders), 1:N 
+Table 5(Orders), Table 11(CustomerOrders), 1:N 
+Table 1(Books),Table 3(Publishers), N:1
+Table 1(Books),Table 7(Genres), N:1
+*/
+
