@@ -3,8 +3,6 @@
 ### Assignment: PS2 - Database Design ###
 
 
-
-
 */ 1. Create a list of the entities and properties of the book industry
 ### Reference1 : Amazon.com <https://www.amazon.com/>
 ### Reference2 : MIT Libraries <https://libraries.mit.edu/>
@@ -80,5 +78,20 @@ Table 5(Customers), Table 11(CustomerOrders), 1:N
 Table 5(Orders), Table 11(CustomerOrders), 1:N 
 Table 1(Books),Table 3(Publishers), N:1
 Table 1(Books),Table 7(Genres), N:1
+
+### The above relationships meed the following requirements##
+#7.1. Books per author.
+#7.2. Authors per book.
+#7.3. Author royalties on a book.
+#7.4. Book royalties per author.
+#7.5. Books in a genre.
+#7.6. Books published by a publisher.
+#7.7. Editors per book.
+#7.8. Books per editor.
+#7.9. Books in an order.
+#7.10. Orders for a book.
+#7.11. Customer orders.
+#7.12. Orders per customer
+
 */
 
